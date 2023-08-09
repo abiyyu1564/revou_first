@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrapper{
+            display: grid;
+            grid-template-columns: 100px 100px 100px;
+            grid-gap: 10px;
+        }
+        .box{
+            background-color: gray;
+            padding: 10px;
+            color: aqua;
+            border-radius: 10px;
+        }
+        .container{
+            height: 300px;
+            display: flex; /*flex tuh jadi biar kyk ada text box gitu kyknya*/
+            /*ada juga grid mirip kyk flex cuman agak kompleks*/
+            justify-content: flex-start;
+            align-items: center;
+        }
+        .container div{
+            width: 100px;
+            padding: 10px; /*gap antara text sama border, bisa dipecah jadi padding top, left, dll*/
+            text-align: center;
+            color: bisque;
+            border: 2px solid;
+            background-color: black;
+            margin: 10px; /*gap antara border dengan border yg lain, bisa dipecah kyk padding*/
+            border-radius: 10px; /*ngelengkungin corner border, klo gk pake ujungnya tajem*/
+        }
+    </style>
+</head>
+<body>
+    <nav class="container">
+        <div class="home">Home</div>
+        <div class="search">Search</div>
+        <div class="Logout">Logout</div>
+    </nav>
+
+    <nav class="wrapper">
+        <div class="box">Home</div>
+        <div class="box">Search</div>
+        <div class="box">Logout</div>
+    </nav>
+</body>
+</html>
