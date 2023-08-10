@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .divwithboxsizing {
+            background-color: brown;
+            width: 100px;
+            border: 10px solid black;
+            padding: 40px;
+            box-sizing: border-box; /*fungsi box sizing tuh biar ukurannya seseuai width*/
+            /*klo gk pake total nya jadi 100+10+40=150px, tapi klo pake semua udah include jadinya 100px*/
+        }
+        .divwithoutboxsizing{  
+            margin-top: 10px;     
+            background-color: yellow;
+            width: 100px;
+            border: 10px solid black;
+            box-sizing: border-box;
+        }
+        .flexbox {
+            display: flex;
+            background-color: darkgray;
+            flex-direction: row;/*ngatur direksinya kyk gimana. klo row jd kyk 1 2 3 4. klo column jd kyk 1 trs bwahnya 2 dst.*/
+            gap: 20px;/*gap antara isi*/
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Hello</h1>
+    </header>
+    <footer>
+        <h1>World</h1>
+    </footer>
+    <div class="divwithboxsizing">
+        <h1>
+            jeruk
+        </h1>
+    </div>
+    <div class="divwithoutboxsizing">
+        <h1>
+            apel
+        </h1>
+    </div>
+    <div class="flexbox">
+        <h1>1</h1>
+        <h1>2</h1>
+        <h1>3</h1>
+        <h1>4</h1>
+        <h1>5</h1>
+    </div>
+</body>
+</html>
